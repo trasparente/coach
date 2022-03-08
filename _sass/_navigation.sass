@@ -1,0 +1,76 @@
+//
+// SLIDE NAVIGATION
+// --------------------------------------
+$size-MenuIcon: 30px
+$width-MenuIcon: 6px
+$color-MenuIcon: #999
+
+.MenuContainer
+  display: inline-block
+  margin: 15px 15px 0
+
+.HiddenCheckbox
+  display: none
+  box-sizing: border-box
+  padding: 0
+  &:checked
+    & ~ .MenuIcon
+      &::before
+        box-shadow: transparent 0 0 0
+        transform: rotate(45deg) translate3d($width-MenuIcon, -$width-MenuIcon / 2, 0)
+      &::after
+        transform: rotate(-45deg) translate3d($width-MenuIcon, $width-MenuIcon / 2, 0)
+    & ~ .Menu
+      left: 0
+
+.MenuIcon
+  cursor: pointer
+  display: block
+  float: left
+  height: $size-MenuIcon
+  position: relative
+  width: $size-MenuIcon
+  z-index: 2
+  &::before, &::after
+    background: $color-MenuIcon
+    display: block
+    content: ''
+    position: absolute
+    transition: box-shadow 0.2s linear, transform 0.4s 0.2s
+  &::before
+    box-shadow: $color-MenuIcon 0 ($width-MenuIcon * 2) 0
+    height: $width-MenuIcon
+    transform-origin: left top
+    width: $size-MenuIcon
+  &::after
+    bottom: 0
+    height: $width-MenuIcon
+    transform-origin: left bottom
+    width: $size-MenuIcon
+
+.Menu
+  background: $light-grey
+  bottom: 0
+  left: -90%
+  position: absolute
+  top: 0
+  width: 90%
+  transition: left 0.4s
+
+.Menu-list
+  list-style-type: none
+  margin: $size-MenuIcon + 30px 0 0
+  font-size: x-large
+  padding: 0
+
+.Menu-item
+  margin: 0
+
+.Menu-link
+  display: block
+  overflow: hidden
+  padding: 8px 22px
+  position: relative
+  z-index: 1
+  &:hover
+    text-decoration: underline

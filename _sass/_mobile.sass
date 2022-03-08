@@ -1,0 +1,40 @@
+//
+// MOBILE
+// --------------------------------------
+
+@media (max-width: $small-screen)
+
+  body
+    font-size: $font-size-mobile
+    line-height: $line-height-mobile
+
+  main
+    margin: 0 1em !important
+
+  footer
+    width: 100%
+    font-size: initial
+
+  // Navigation
+  nav:not(.Menu)
+    display: flex
+    gap: .3em
+    &::after, &::before
+      padding-block: .4em
+      color: $grey
+    &::after
+      content: '❯'
+    &::before
+      content: '❮'
+    ul li
+      display: inline-block
+      padding-block: .5em
+
+  // Forms
+
+  textarea
+    width: 100%
+
+  input[type='submit']
+    font-size: initial
+    padding: 1em 4em .8em

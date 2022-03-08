@@ -1,0 +1,58 @@
+//
+// FORMS
+// --------------------------------------
+
+input, textarea
+
+  // Appearance
+  appearance: none
+  -webkit-appearance: none
+  @extend .mha
+  background: $almost-white
+  color: $almost-black
+  display: block
+  border-radius: $border-radius
+
+  // Typography
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+
+input[type='email']
+  padding: .4em .4em .1em
+  margin-bottom: 1em
+
+input[type='email'], textarea
+  width: 70%
+  // Border
+  border: 2px solid $grey
+
+input[type='submit']
+
+  // Submit Appearance
+  background: $light-grey
+  font-size: large
+  cursor: pointer
+  margin-top: 1em
+  padding: 1em 4em .7em
+  transition: all 0.2s ease
+  border: none
+
+  // Hover effect
+  &:hover
+    background: $dark-grey
+    color: $almost-white
+
+  // Active effect
+  &:active
+    background: $light-grey
+    color: currentColor
+
+textarea
+  padding: .4em
+  width: 70%
+
+// Rainbow
+body.rainbow
+  input[type='email'], textarea
+    border: none

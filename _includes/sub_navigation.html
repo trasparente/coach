@@ -1,0 +1,23 @@
+{%- assign file = page.name | split: '.' | first -%}
+{%- for main in site.data.pages[page.language] -%}
+  {%- assign forloop_main = forloop.index0 -%}
+  {%- if main.first -%}
+    {% for sub in main.first[1] %}
+      {%- assign sub_slug = sub | slugify: "latin" -%}
+      {%- if sub_slug == file -%}
+        {%- assign index_sub = forloop.index0 -%}
+        {%- assign title_sub = sub -%}
+        {%- assign index_main = forloop_main -%}
+        {%- assign title_main = main | first | first -%}
+      {%- endif -%}
+    {% endfor %}
+  {%- else -%}
+    {%- assign main_slug = main | slugify: "latin" -%}
+    {%- if main_slug == file -%}
+      {%- assign index_main = forloop_main -%}
+      {%- assign title_main = main -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign title_sub_slug = title_sub | slugify: "latin" -%}
+{%- assign title_main_slug = title_main | slugify: "latin" -%}

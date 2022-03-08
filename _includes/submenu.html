@@ -1,0 +1,6 @@
+{%- assign links = site.data.pages[page.language][index_main][title_main] -%}
+<nav>
+  <ul>
+    {% for link in links %}{%- assign page_slug = link | slugify: "latin" -%}{% assign url = '' | split: '' | push: page.language | push: title_main_slug | push: page_slug | join: '/' %}<li><a href='{{ url | absolute_url }}' {%- if page.url contains url -%}class='active'{%- endif -%}>{{ link }}</a></li>{% endfor %}
+  </ul>
+</nav>

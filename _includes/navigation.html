@@ -1,0 +1,25 @@
+<div class="MenuContainer">
+  <input type="checkbox" name="menu" id="menu" class=HiddenCheckbox>
+  <label class="MenuIcon" for="menu"></label>
+  <nav class='Menu'>
+    <ul class="Menu-list">
+      {%- for section in site.data.pages[page.language] -%}
+        <li class='Menu-item'>
+          {%- assign url = '' | split: '' | push: page.language -%}
+          {%- if section.first -%}
+            {%- assign path = section | first | first -%}
+            {%- assign path_slug = path | slugify: 'latin' -%}
+            {%- assign url = url | push: path_slug -%}
+            {%- assign default_page = section | first | last | first | slugify: 'latin' -%}
+            {%- assign url = url | push: default_page -%}
+          {%- else -%}
+            {%- assign path = section -%}
+            {%- assign path_slug = path | slugify: 'latin' -%}
+            {%- assign url = url | push: path_slug -%}
+          {%- endif -%}
+          <a href='{{ url | join: "/" | absolute_url }}' class='Menu-link'>{{ path }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+</div>

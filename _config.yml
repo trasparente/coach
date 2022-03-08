@@ -1,0 +1,24 @@
+timezone: Europe/Berlin
+baseurl: /coach
+permalink: pretty
+repository: trasparente/coach
+
+# CONTACTS
+email: coach@coach.com
+instagram: coach
+phone: +000 000 0000000
+
+# DEFAULTS
+defaults:
+  - scope:
+      path: "en"
+    values:
+      language: en
+  - scope:
+      path: "de"
+    values:
+      language: de
+  - scope:
+      path: "it"
+    values:
+      language: it
