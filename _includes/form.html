@@ -1,5 +1,8 @@
-<form action="index.html" method="post">
-  <input type="email" name="email" placeholder="Email...">
-  <textarea name="text" rows="6" placeholder="Text..."></textarea>
+<!-- Apache <apache@petrosh.altervista.org> -->
+<form action="http://petrosh.altervista.org/haarlack/send.php" method="post">
+  <input type="email" name="email" id="email" placeholder="Email..." required>
+  <textarea name="text" id="text" rows="6" placeholder="Text..." required></textarea>
+  <input type="hidden" name="referrer" id="referrer" value="">
+  <input type="hidden" name="UserAgent" id="UserAgent" value="">
   <input type="submit" name="send" value="SEND">
 </form>
