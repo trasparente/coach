@@ -1,6 +1,6 @@
 # coach
 
-Pages structure is in [`pages.yml`](https://github.com/trasparente/coach/blob/main/_data/pages.yml) file.
+Pages structure is in [`_data/pages.yml`](https://github.com/trasparente/coach/blob/main/_data/pages.yml) file.
 
 ```yml
 language-1:
