@@ -1,2 +1,4 @@
----
----
+- Trainer of trainers; "Jugend für Europa" Agenzia Nazionale tedesca Erasmus+ 
+- Supervisore; VfTC e.V. Berlino/Germania
+- Coach psicologia; individuale e sistemico VfTC e.V. Berlino/Germania
+- Laurea in Sociologia della Cultura e processi culturali; Università di Trento e Technische Universität di Dresda

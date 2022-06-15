@@ -1,2 +1,3 @@
----
----
+Il walking coach promuove l'esperienza riflessiva e di crescita combinando le tecniche di comunicazione verbale con l'andatura naturale di una passeggiata. Generalmente gli itinerari sono nel verde e in luoghi con pochissima affluenza di persone. Questo setting particolare è specificamente adatto agli amanti della natura ma anche a quelle persone che traggono vantaggio da escursioni a piedi durante il processo riflessivo e di crescita personale.
+
+Le sessioni possono durare da un minimo di 45 minuti ad un massimo di 90 minuti e consistono in una fase espressiva ed una fase riflessiva.

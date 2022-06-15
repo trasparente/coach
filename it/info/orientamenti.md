@@ -1,2 +1,3 @@
----
----
+Sia nella professione che nella vita quotidiana mi oriento all'approccio Zen verso l'esperienza di vita e nell'interazione con le persone. Questo orientamento non è nè dettato da una particolare sensibilità religiosa nè dal bisogno di trovare serenità o raggiungere stati spirituali di coscienza. Io trovo la filosofia Zen un ottimo veicolo per affrontare eventuali difficoltà e per arricchire le esperienze sia interpersonali che individuali.
+
+Un ulteriore approccio, sia nella professione che nell'esperienza quotidiana, consiste nella visione e nell'analisi degli esseri umani e dei loro prodotti culturali  offerta dall'antropologia filosofica. 

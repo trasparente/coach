@@ -1,2 +1,3 @@
----
----
+La mia esperienza sul campo è iniziata nel 2016 con persone private e organizzazioni attive nel sociale. Per la maggiorparte supervisione, coaching e training su temi specifici dell'animazione sociale giovanile internazionale. Più recentemente mi sono dedicato al coaching individuale con particolare riguardo alle competenze emozionali, ai processi di crescita individuale e all'individuazione di esperienze che rallentano o bloccano uno sviluppo felice della personalità e alla ricerca di risorse a disposizione per aumentare la resilienza e per iniziare o continuare un percorso soddisfacente di crescita personale.
+
+In aggiunta, dal 2020 mi interesso di processi creativi nell'ambito artistico con particolare attenzione allo sviluppo di un equilibrio tra le aspirazioni artistiche e le risorse personali e sistemiche da liberare e curare per ottenere risultati e raggiungere gli obiettivi prefissati.
