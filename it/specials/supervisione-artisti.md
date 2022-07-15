@@ -1,2 +1,2 @@
----
----
+Se il processo creativo non procede ...
+Se la comunicazione con altri artist* non ti soddisfa
