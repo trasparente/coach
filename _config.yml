@@ -4,12 +4,17 @@ permalink: pretty
 repository: trasparente/coach
 
 # CONTACTS
-email: coach@coach.com
-instagram: coach
-phone: +000 000 0000000
+email: "coach@coach.com"
+instagram: "@coach"
+phone: "+000 000 0000000"
 
 # DEFAULTS
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: dawn.jpg
+      header: White
   - scope:
       path: "en"
     values:

@@ -1,5 +1,9 @@
+# GERMAN
+# -------------------------------------
 de:
+  # SECTION (two spaces alignement), the title as string
   - Info:
+    # SUB-SECTION (four spaces alignment), the title as string
     - Qualifikationen
     - Erfahrung
     - Orientierungen
@@ -26,6 +30,8 @@ de:
     - Kreativitat Talk
     - Supervision Kunstler
   - Kontakte
+# ENGLISH
+# -------------------------------------
 en:
   - Info:
     - Qualifications
@@ -54,6 +60,8 @@ en:
     - Creativity Talk
     - Artists Supervision
   - Contacts
+# ITALIAN
+# -------------------------------------
 it:
   - Info:
     - Qualificazioni

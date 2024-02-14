@@ -1,13 +1,19 @@
 //
 // SLIDE NAVIGATION
 // --------------------------------------
-$size-MenuIcon: 30px
-$width-MenuIcon: 6px
-$color-MenuIcon: #999
+$corner-margins: 15px !default
+$size-MenuIcon: 30px !default
+$width-MenuIcon: 6px !default
+$color-MenuIcon-opened: Green !default
+$color-MenuIcon-closed: Blue !default
+$color-link: Blue !default
+$color-link-active: Violet !default
+$cassetto-image: none !default
+$cassetto-background: #ddd !default
 
 .MenuContainer
   display: inline-block
-  margin: 15px 15px 0
+  margin: $corner-margins $corner-margins 0
 
 .HiddenCheckbox
   display: none
@@ -15,15 +21,19 @@ $color-MenuIcon: #999
   padding: 0
   &:checked
     & ~ .MenuIcon
+      $color-MenuIcon: $color-MenuIcon-opened
       &::before
+        background: $color-MenuIcon
         box-shadow: transparent 0 0 0
         transform: rotate(45deg) translate3d($width-MenuIcon, -$width-MenuIcon / 2, 0)
       &::after
+        background: $color-MenuIcon
         transform: rotate(-45deg) translate3d($width-MenuIcon, $width-MenuIcon / 2, 0)
     & ~ .Menu
       left: 0
 
 .MenuIcon
+  $color-MenuIcon: $color-MenuIcon-closed
   cursor: pointer
   display: block
   float: left
@@ -32,13 +42,13 @@ $color-MenuIcon: #999
   width: $size-MenuIcon
   z-index: 2
   &::before, &::after
-    background: $color-MenuIcon
+    background: $color-MenuIcon-closed
     display: block
     content: ''
     position: absolute
     transition: box-shadow 0.2s linear, transform 0.4s 0.2s
   &::before
-    box-shadow: $color-MenuIcon 0 ($width-MenuIcon * 2) 0
+    box-shadow: $color-MenuIcon-closed 0 ($width-MenuIcon * 2) 0
     height: $width-MenuIcon
     transform-origin: left top
     width: $size-MenuIcon
@@ -49,7 +59,9 @@ $color-MenuIcon: #999
     width: $size-MenuIcon
 
 .Menu
-  background: $light-grey
+  background: $cassetto-background
+  background-image: $cassetto-image
+  background-size: cover
   bottom: 0
   left: -90%
   position: absolute
@@ -67,11 +79,14 @@ $color-MenuIcon: #999
 .Menu-item
   margin: 0
 
-.Menu-link
+a.Menu-link
+  color: $color-link
   display: block
   overflow: hidden
   padding: 8px 22px
   position: relative
   z-index: 1
+  &.active, &:active
+    color: $color-link-active
   &:hover
     text-decoration: underline

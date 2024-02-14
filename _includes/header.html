@@ -1,0 +1,5 @@
+<header style='{% if page.image %}background-image:url({{ "assets/images/banners/" | append: page.image | absolute_url }});{% endif %}'>
+  {% include navigation.html %}
+  <h1 style='{% if page.header %}color:{{ page.header }}{% endif %}'>{{ title_main }}</h1>
+  {% include language.html %}
+</header>

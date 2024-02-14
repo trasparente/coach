@@ -13,11 +13,19 @@ body
   background: $almost-white
 
 body.rainbow
-  background: linear-gradient(black 2px,rgba(0,255,255,.2) 7px, $almost-white 200px 60%, rgba(0, 128, 0, .15) 98%, rgba(178, 34, 34, .4))
+  background: linear-gradient(rgba($rainbow-sun, $rainbow-opacity) 2px, rgba($rainbow-sky, $rainbow-opacity) 7px, $almost-white 200px 60%, rgba($rainbow-grass, $rainbow-opacity / 2) 98%, rgba($rainbow-earth, $rainbow-opacity))
   background-repeat: no-repeat
 
 *
   box-sizing: border-box
+  scrollbar-color: $scroll-thumb $scroll-track
+  scrollbar-width: auto
+::-webkit-scrollbar-track
+  background: $scroll-track
+::-webkit-scrollbar-thumb
+  background: $scroll-thumb
+::-webkit-scrollbar
+  width: auto
 
 // Cursor on abbreviations
 abbr

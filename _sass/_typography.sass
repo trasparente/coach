@@ -17,12 +17,6 @@ code
   font-size: 90%
   padding: .1em .2em
 
-// Footer
-footer
-  // Appearance
-  color: grey
-  font-size: smaller
-
 //
 // HEADERS
 // --------------------------------------
@@ -38,9 +32,9 @@ h1
 
 h1, h2, h3
   margin-top: 0
-  padding-top: 1.5em
+  padding-top: 1.3em
   font-family: 'Open Sans', sans-serif
 
-main h1:first-child
-  text-transform: uppercase
-  padding-top: 0
+@for $index from 1 through 3
+  h#{$index}
+    font-size: #{nth($headings-font-size, $index)}em

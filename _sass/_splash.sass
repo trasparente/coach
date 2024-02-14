@@ -1,0 +1,15 @@
+html[data-dir='/']
+  height: 100%
+
+body[data-dir='/']
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  header
+    // Override inline css style
+    background-image: none !important
+  main > p:first-child
+    display: none
+  .quotes
+    margin-top: 0

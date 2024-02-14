@@ -1,0 +1,8 @@
+{%- assign lang = 'de,en,it' | split: ',' -%}
+{%- assign lang_name = 'Deutsche,English,Italiano' | split: ',' -%}
+<div class='languages'>{% for l in lang %}
+{%- assign main = site.data.pages[l][index_main] -%}
+{%- if main.first -%}{%- assign main = main | first | first -%}{%- assign sub = site.data.pages[l][index_main][main][index_sub] -%}{%- endif -%}
+{%- assign main = main | slugify: "latin" -%}
+{%- assign sub = sub | slugify: "latin" -%}
+{%- assign url = "" | split: "" | push: l | push: main | push: sub | join: '/' -%}{%- if page.language != l -%}<a href='{{ url | absolute_url }}' title='{{ lang_name[forloop.index0] }} language'><img src='{{ "assets/images/flags/" | append: lang[forloop.index0] | append: ".jpg" | absolute_url }}' alt='{{ lang_name[forloop.index0] }} language' /></a>{%- endif -%}{% endfor %}</div>
